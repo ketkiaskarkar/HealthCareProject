@@ -76,7 +76,7 @@ public class PsTakeCare {
 		try{
 			wait=new WebDriverWait(driver, 40);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='city-toggle-slide']/section/section[2]/div[2]/button"))).click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='site-header']/section/section[1]/div[4]/div"))).click();
+		//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='site-header']/section/section[1]/div[4]/div"))).click();
 			String strSpecialChar="#@%$&";
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='typeahead-surgery']"))).sendKeys(strSpecialChar);
 			driver.findElement(By.xpath("//*[@id='home-page-search-row']/div/div[2]/button")).click();
@@ -102,7 +102,7 @@ public class PsTakeCare {
 		try{
 			wait=new WebDriverWait(driver, 40);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='city-toggle-slide']/section/section[2]/div[2]/button"))).click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='site-header']/section/section[1]/div[4]/div"))).click();
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='site-header']/section/section[1]/div[4]/div"))).click();
 			String strSurgeryName="Total Knee Replacement (TKR)";
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='typeahead-surgery']"))).sendKeys(strSurgeryName);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='home-page-search-row']/div/div[2]/button"))).click();
